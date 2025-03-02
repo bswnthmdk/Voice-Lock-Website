@@ -1,0 +1,124 @@
+@import url("Variables.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--seagreen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Login Card */
+.login-card {
+  padding: 20px;
+  width: 30vw;
+  max-width: 400px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Text */
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  text-align: center;
+}
+
+/* Form Inputs */
+fieldset {
+  border-radius: 5px;
+  padding: 9px;
+  padding-top: 5px;
+  border: 1px solid #ccc;
+}
+
+fieldset:hover {
+  border: 2px solid var(--seagreen);
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--seagreen);
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.login-button:hover {
+  transform: scale(0.95);
+}
+
+/* Sign-up Section */
+.for-signup {
+  padding: 5px;
+  text-align: center;
+}
+
+.for-signup h6 {
+  font-size: 1em;
+}
+
+.for-signup a {
+  font-size: 1em;
+  color: var(--seagreen);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.for-signup a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .login-card {
+    width: 80%;
+  }
+
+  .login-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .login-button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}

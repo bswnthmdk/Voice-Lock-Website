@@ -1,0 +1,79 @@
+@import url("Variables.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--white);
+}
+
+/* Top Navigation Bar */
+.topline {
+  width: 100%;
+  max-width: 100vw;
+  padding: 20px;
+  background: var(--seagreen);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Button Styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button {
+  height: 50px;
+  width: 120px;
+  padding: 10px;
+  border: 2px solid var(--white);
+  border-radius: 10px;
+  background-color: var(--white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Hover Effect */
+.button:hover {
+  transform: scale(1.15);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .topline {
+    flex-direction: row;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .button {
+    width: 80%;
+    font-size: 0.9rem;
+    height: 45px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    width: 90%;
+    font-size: 0.85rem;
+    height: 40px;
+    padding: 20px;
+  }
+}
